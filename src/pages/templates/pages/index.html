@@ -115,7 +115,6 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 200px;
             margin-bottom: 50px;
         }
 
@@ -152,6 +151,78 @@
             padding: 20px;
         }
 
+        .exp-comp {
+            text-decoration: underline;
+        }
+
+        .proj-head {
+            text-decoration: underline;
+        }
+
+        .exp-position {
+            font-size: 20px;
+        }
+
+        .exp-time {
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .proj-tech {
+            font-size: 20px;
+        }
+
+        .exp-content {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .experience-content {
+            margin-bottom: 120px;
+        }
+
+        .project-content {
+            margin-bottom: 120px;
+        }
+
+        .exp-context {
+            text-align: justify;
+            /* word-break: break-all; */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+
+        .project-context {
+            text-align: justify;
+            /* word-break: break-all; */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+
+        
+
+        .contact-text {
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 500px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+
     </style>
 </head>
 <body>
@@ -168,16 +239,17 @@
             <a href="https://www.github.com/iamsaicharan" target="_blank"><img class="github-img" src="http://ghchart.rshah.org/iamsaicharan" alt="iamsaicharan"></a>
             
         </div>
+
         <div class="social-links">
-        <a href="https://github.com/pulls"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/vadakapur-sai-charan/"><i class="fab fa-linkedin-in fa-2x"></i></a>
-        <a href="https://www.instagram.com/iamsaicharan/"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="mailto:charanvadakapur@gmail.com"><i class="fas fa-at fa-2x"></i></a>
+            <a href="https://github.com/pulls"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/vadakapur-sai-charan/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="https://www.instagram.com/iamsaicharan/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="mailto:charanvadakapur@gmail.com"><i class="fas fa-at fa-2x"></i></a>
         </div>
+
         <div id="skills">
             <br>
             <h1 class="main-skills"><a href="/"><b>My skills</b></a></h1> 
-
             <div class="skills-list">
                 <div class="row">
                     <div class="col"><div><span class="iconify" data-icon="simple-icons:python" data-inline="false" data-width="70px" data-height="70px"></span></div><p class="skill-head">Python</p></div>
@@ -201,12 +273,62 @@
         </div>
 
         <div id="experience">
-
             <br>
             <h1 class="main-skills"><a href="/"><b>Experience</b></a></h1> 
-
+            <div class="experience-content">
+                <div class="exp-content">
+                    <a href="https://cognizant.com" target="_blank"><h2 class="exp-comp">Cognizant</h2></a>
+                    <h2 class="exp-position">Programmer Analyst | Hyderabad, India</h2>
+                    <h2 class="exp-time">January, 2021 - Present</h2>
+                    <ul class="exp-context">
+                        <li>Responsible for the back-end code for reliability analytic team. Reduced the wait time for the customer by 90% by implementing parallelization using python.</li>
+                        <li>Developed a batch reporting system which can run multiple reports (Max. 62 reports) in a single jobs.</li>
+                        <li>Engineered an active data pipe line which queries the data from a SQL database, make transformations and store the data as parquet file in Azure Data lake. The pipeline is automated to run on daily bases.</li>
+                        <li>Debugged, documented and maintained the code-base across various stages of SDLC.</li>
+                    </ul>
+                </div>
+                <div class="exp-content">
+                    <a href="https://cognizant.com" target="_blank"><h2 class="exp-comp">Cognizant</h2></a>
+                    <h2 class="exp-position">Programmer Analyst Trainee | Hyderabad, India</h2>
+                    <h2 class="exp-time">January, 2021 - Present</h2>
+                    <ul class="exp-context">
+                        <li>Supported analytic team with data reporting by building an active data pipeline using Amazon Athena, Python and Amazon Lambda.</li>
+                        <li>Worked on data gathering, data cleaning and data manipulation for a machine learning model which was implemented in a financial modelling system.</li>
+                        <li>Hands on experience in using various cloud services like AWS EC2, S3, Elastic BeanStalk, Route 53 etc.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
+        <div id="projects">
+            <br>
+            <h1 class="main-skills"><a href="/"><b>Projects</b></a></h1>
+            <div class="project-content">
+                <div class="proj-content">
+                    <a href="https://github.com/iamsaicharan" target="_blank"><h2 class="proj-head">Web Based EPUB Reader</h2></a>
+                    <h2 class="proj-tech">Python, Django, MySQL, AWS EC2, S3, Route 53, Ngnix, Git, GitHub</h2>
+                    <p class="project-context">Built a web-based EPUB reading platform using Django Web Framework. Key features include - user authentication, a reading tracker which helps the user to view progress, integration with the payment gateway to purchase a membership where users can view the content ad-free. Data is stored in a Postgresql database and files are served from Amazon S3 bucket. Application was deployed on a cloud server using Ngnix and Gunicorn.</p>
+                </div>
+                <div class="proj-content">
+                    <a href="https://github.com/iamsaicharan" target="_blank"><h2 class="proj-head">Stock Watch and Notifier</h2></a>
+                    <h2 class="proj-tech"></h2>
+                    <p class="project-context">Developed a real-time stock price notifier application using python scripting and web scraping technologies. Implemented financial indicators such as the moving average, exponential moving average, relative strength index (RSI) for analysing data. Application will notify when the price starts increasing (more than 1%) consecutively.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact">
+            <br>
+            <h1 class="main-skills"><a href="/"><b>Contact</b></a></h1>
+            <p class="contact-text">My inbox is always open. Whether you have a question or just want to say hi, I'll always get back to you!</p>
+            <div class="social-links">
+                <a href="https://github.com/pulls"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/vadakapur-sai-charan/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                <a href="https://www.instagram.com/iamsaicharan/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="mailto:charanvadakapur@gmail.com"><i class="fas fa-at fa-2x"></i></a>
+            </div>
+        </div>
         
 
 
