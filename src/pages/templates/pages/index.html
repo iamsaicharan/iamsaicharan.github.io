@@ -43,6 +43,8 @@
             background-color: #100c08;
             font-family:'Courier New', Courier, monospace;
             color: #f5f5f5;
+            word-spacing: -3px;
+            letter-spacing: -1px;
         }
         .main-name {
             margin-top: 15px;
@@ -50,6 +52,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 20px;
+            font-size: 30px;
         }
 
         .main-skills {
@@ -61,7 +64,12 @@
         .nav-top {
             text-align: right;
         }
+
+        .nav-links {
+            font-size: 20px;
+        }
         .nav1 {
+
             text-align: center;
             display: block;
             margin-left: auto;
@@ -107,7 +115,7 @@
             -moz-hyphens: auto;
             -webkit-hyphens: auto;
             hyphens: auto;
-            padding: 20px;
+            /* padding: 20px; */
         }
 
         .footer {
@@ -185,6 +193,11 @@
             margin-bottom: 120px;
         }
 
+        .proj-content {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
         .exp-context {
             text-align: justify;
             /* word-break: break-all; */
@@ -223,12 +236,16 @@
             font-size: 22px;
         }
 
+        .container {
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
     <div class="nav1" id="">
         <h1 class="main-name"><a href="/"><b>@iamsaicharan</b></a></h1> 
-        <h4><a href="#home">Home</a> | <a href="#skills">Skills</a> | <a href="#experience">Experience</a> | <a href="#project">Projects</a> | <a href="#contact">Contact</a></h4>
+        <h4 class="nav-links"><a href="#home">Home</a> | <a href="#skills">Skills</a> | <a href="#experience">Experience</a> | <a href="#project">Projects</a> | <a href="#contact">Contact</a></h4>
     </div>
     <div class="container">
         <div class="home-content" id="home">
@@ -311,7 +328,7 @@
                 </div>
                 <div class="proj-content">
                     <a href="https://github.com/iamsaicharan" target="_blank"><h2 class="proj-head">Stock Watch and Notifier</h2></a>
-                    <h2 class="proj-tech"></h2>
+                    <h2 class="proj-tech">Python, MySQL, Git, GitHub</h2>
                     <p class="project-context">Developed a real-time stock price notifier application using python scripting and web scraping technologies. Implemented financial indicators such as the moving average, exponential moving average, relative strength index (RSI) for analysing data. Application will notify when the price starts increasing (more than 1%) consecutively.</p>
                 </div>
             </div>
