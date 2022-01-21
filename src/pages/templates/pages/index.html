@@ -47,11 +47,11 @@
             letter-spacing: -1px;
         }
         .main-name {
-            margin-top: 15px;
+            margin-top: 10px;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 30px;
         }
 
@@ -97,7 +97,9 @@
         }
 
         text {
-            font-size: 30px;
+            /* font-size: 30px; */
+            font-size: calc(1em + 0.5vmin);
+            /* font-size: 2vw; */
             text-align: justify;
             text-justify: inter-word;
         }
@@ -240,12 +242,17 @@
             padding: 20px;
         }
 
+        hr {
+            border-top: 1px solid #f5f5f5;
+        }
+
     </style>
 </head>
 <body>
-    <div class="nav1" id="">
+    <div class="nav1 container" id="">
         <h1 class="main-name"><a href="/"><b>@iamsaicharan</b></a></h1> 
-        <h4 class="nav-links"><a href="#home">Home</a> | <a href="#skills">Skills</a> | <a href="#experience">Experience</a> | <a href="#project">Projects</a> | <a href="#contact">Contact</a></h4>
+        <h4 class="nav-links"><a href="#home">Home</a> | <a href="#skills">Skills</a> | <a href="#experience">Experience</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a></h4>
+        <hr>
     </div>
     <div class="container">
         <div class="home-content" id="home">
@@ -265,6 +272,7 @@
         </div>
 
         <div id="skills">
+            <hr>
             <br>
             <h1 class="main-skills"><a href="/"><b>My skills</b></a></h1> 
             <div class="skills-list">
@@ -290,6 +298,7 @@
         </div>
 
         <div id="experience">
+            <hr>
             <br>
             <h1 class="main-skills"><a href="/"><b>Experience</b></a></h1> 
             <div class="experience-content">
@@ -318,6 +327,7 @@
         </div>
 
         <div id="projects">
+            <hr>
             <br>
             <h1 class="main-skills"><a href="/"><b>Projects</b></a></h1>
             <div class="project-content">
@@ -336,6 +346,7 @@
 
 
         <div id="contact">
+            <hr>
             <br>
             <h1 class="main-skills"><a href="/"><b>Contact</b></a></h1>
             <p class="contact-text">My inbox is always open. Whether you have a question or just want to say hi, I'll always get back to you!</p>
@@ -351,8 +362,11 @@
 
 
         <div class="footer">
+            <hr>
+            <br>
             <p>&copy; iamsaicharan.com | sai charan vadakapur | 2022</p>
         </div>
     </div>
 </body>
+
 </html>
